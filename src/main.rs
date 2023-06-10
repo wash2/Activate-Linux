@@ -7,13 +7,13 @@ use cosmic::{
     iced::{
         theme,
         widget::{column, text},
-        Application,
+        window, Application, Color, Command,
     },
     iced_sctk::{
-        commands::layer_surface::{Anchor, Layer},
+        commands::layer_surface::{self, Anchor, Layer},
         settings::InitialSurface,
     },
-    iced_style::{application, Color, Theme},
+    iced_style::{application, Theme},
     settings,
 };
 use localize::localize;
@@ -38,9 +38,9 @@ fn main() {
                 bottom: 24,
                 left: 0,
             },
-            keyboard_interactivity:
-                cosmic::iced_sctk::commands::layer_surface::KeyboardInteractivity::None,
+            keyboard_interactivity: layer_surface::KeyboardInteractivity::None,
             exclusive_zone: -1,
+            pointer_interactivity: false,
             ..Default::default()
         },
     );
@@ -61,7 +61,7 @@ impl Application for Activate {
 
     type Flags = ();
 
-    fn new(_flags: Self::Flags) -> (Self, cosmic::iced_sctk::Command<Self::Message>) {
+    fn new(_flags: Self::Flags) -> (Self, Command<Self::Message>) {
         let distro = if let Ok(distro) = os_release::OsRelease::new() {
             distro.name
         } else {
@@ -76,28 +76,28 @@ impl Application for Activate {
         fl!("activate", distro_var)
     }
 
-    fn update(&mut self, _message: Self::Message) -> cosmic::iced_sctk::Command<Self::Message> {
+    fn update(&mut self, _message: Self::Message) -> Command<Self::Message> {
         cosmic::iced::Command::none()
     }
 
     fn view(
         &self,
-        _id: cosmic::iced_native::window::Id,
+        _id: window::Id,
     ) -> cosmic::iced::Element<'_, Self::Message, cosmic::iced::Renderer<Self::Theme>> {
         let distro_var = HashMap::from([("distro", self.distro.clone())]);
         column![
             text(fl!("activate", distro_var.clone()))
-                .size(32)
+                .size(24)
                 .style(theme::Text::Color(Color::from_rgba(1.0, 1.0, 1.0, 0.5))),
             text(fl!("go-to-settings", distro_var))
-                .size(24)
+                .size(16)
                 .style(theme::Text::Color(Color::from_rgba(1.0, 1.0, 1.0, 0.5))),
         ]
         .spacing(4)
         .into()
     }
 
-    fn close_requested(&self, _id: cosmic::iced_native::window::Id) -> Self::Message {
+    fn close_requested(&self, _id: window::Id) -> Self::Message {
         info!("Exiting ActivateLinux");
         std::process::exit(0);
     }
