@@ -1,6 +1,6 @@
 mod localize;
 
-use std::collections::HashMap;
+use std::{collections::HashMap, path::Path};
 
 use cosmic::{
     executor,
@@ -62,7 +62,11 @@ impl Application for Activate {
     type Flags = ();
 
     fn new(_flags: Self::Flags) -> (Self, Command<Self::Message>) {
-        let distro = if let Ok(distro) = os_release::OsRelease::new() {
+
+        let distro = if let Some(Ok(distro)) = Path::new("/.flatpak-info").exists().then(|| os_release::OsRelease::new_from(Path::new("/var/run/host/etc/os-release"))) {
+            distro.name
+        }
+         else if let Ok(distro) = os_release::OsRelease::new() {
             distro.name
         } else {
             "Linux".to_string()

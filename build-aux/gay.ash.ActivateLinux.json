@@ -13,7 +13,8 @@
         "--socket=wayland",
         "--device=dri",
         "--env=RUST_LOG=info",
-        "--env=RUST_BACKTRACE=1"
+        "--env=RUST_BACKTRACE=1",
+        "--filesystem=host-etc:ro"
     ],
     "build-options": {
         "build-args": [
