@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Activate Linux
+Comment=A helpful app that reminds you to activate linux
+Type=Application
+Exec=activate-l
+Terminal=false
+Categories=X-Cosmic;X-Iced;
+Keywords=X-Cosmic;X-Iced;
+Icon=gay.ash.ActivateLinux

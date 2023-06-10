@@ -1,0 +1,50 @@
+{
+    "id": "gay.ash.ActivateLinux",
+    "runtime": "org.freedesktop.Platform",
+    "runtime-version": "22.08",
+    "sdk": "org.freedesktop.Sdk",
+    "sdk-extensions": [
+        "org.freedesktop.Sdk.Extension.rust-stable",
+        "org.freedesktop.Sdk.Extension.llvm14"
+    ],
+    "command": "activate-l",
+    "finish-args": [
+        "--share=ipc",
+        "--socket=wayland",
+        "--device=dri",
+        "--env=RUST_LOG=info",
+        "--env=RUST_BACKTRACE=1"
+    ],
+    "build-options": {
+        "build-args": [
+            "--share=network"
+        ],
+        "append-path": "/usr/lib/sdk/rust-stable/bin:/usr/lib/sdk/llvm14/bin",
+        "env": {
+            "CARGO_REGISTRIES_CRATES_IO_PROTOCOL": "sparse",
+            "CARGO_TARGET_X86_64_UNKNOWN_LINUX_GNU_LINKER": "clang",
+            "CARGO_TARGET_X86_64_UNKNOWN_LINUX_GNU_RUSTFLAGS": "-C link-arg=-fuse-ld=/usr/lib/sdk/rust-stable/bin/mold",
+            "CARGO_TARGET_AARCH64_UNKNOWN_LINUX_GNU_LINKER": "clang",
+            "CARGO_TARGET_AARCH64_UNKNOWN_LINUX_GNU_RUSTFLAGS": "-C link-arg=-fuse-ld=/usr/lib/sdk/rust-stable/bin/mold"
+        }
+    },
+    "modules": [
+        {
+            "name": "activate-l",
+            "buildsystem": "simple",
+            "build-commands": [
+                "build-aux/dist-vendor.sh",
+                "cargo build --release",
+                "install -D target/release/activate-l /app/bin/activate-l",
+                "install -D data/gay.ash.ActivateLinux.desktop /app/share/applications/gay.ash.ActivateLinux.desktop",
+                "install -D data/ActivateLinux.svg /app/share/icons/hicolor/scalable/apps/gay.ash.ActivateLinux.svg"
+            ],
+            "sources": [
+                {
+                    "type": "dir",
+                    "path": "../"
+                }
+            ]
+        }
+    ]
+}

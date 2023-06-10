@@ -26,7 +26,7 @@ fn main() {
     localize();
 
     let mut settings = settings();
-    settings.id = Some("ActivateLinux".to_string());
+    settings.id = Some("gay.ash.ActivateLinux".to_string());
     settings.initial_surface = InitialSurface::LayerSurface(
         cosmic::iced::wayland::actions::layer_surface::SctkLayerSurfaceSettings {
             layer: Layer::Overlay,

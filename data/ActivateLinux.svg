@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="129.93701mm"
+   height="129.93703mm"
+   viewBox="0 0 129.93701 129.93703"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="ActivateLinux.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   inkscape:export-filename="ActivateLinux.svg"
+   inkscape:export-xdpi="45.29031"
+   inkscape:export-ydpi="45.29031"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.75985081"
+     inkscape:cx="61.854247"
+     inkscape:cy="165.82202"
+     inkscape:window-width="1880"
+     inkscape:window-height="1035"
+     inkscape:window-x="26"
+     inkscape:window-y="23"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <rect
+       x="227.81149"
+       y="404.09552"
+       width="325.34641"
+       height="111.17913"
+       id="rect362" />
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="-90.56993 : -67.379106 : 1"
+       inkscape:vp_y="0 : 1418.9725 : 0"
+       inkscape:vp_z="348.46352 : -67.379106 : 1"
+       inkscape:persp3d-origin="128.94679 : -137.61823 : 1"
+       id="perspective292" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:export-filename="./layer1.svg"
+     inkscape:export-xdpi="24.190475"
+     inkscape:export-ydpi="24.190475"
+     transform="translate(-0.4714467,-0.54307912)">
+    <circle
+       style="fill:#ffccaa;fill-opacity:1;stroke:#bdbdbd;stroke-width:0.001;stroke-opacity:1"
+       id="path1831"
+       cx="65.439957"
+       cy="65.511589"
+       r="64.96801" />
+    <g
+       sodipodi:type="inkscape:box3d"
+       id="g2565"
+       style="fill:#ffccaa;stroke:#bdbdbd;stroke-width:0.00377953;stroke-opacity:1"
+       inkscape:perspectiveID="#perspective292"
+       inkscape:corner0="0.80208458 : 0.22778519 : 0 : 1"
+       inkscape:corner7="0.44885842 : 0.18599199 : 0.25 : 1">
+      <path
+         sodipodi:type="inkscape:box3dside"
+         id="path2577"
+         style="fill:#e9e9ff;fill-rule:evenodd;stroke:none;stroke-linejoin:round"
+         inkscape:box3dsidetype="11"
+         d="M 70.360345,74.578822 103.7229,48.946398 V 83.854192 L 70.360345,103.47792 Z"
+         points="103.7229,48.946398 103.7229,83.854192 70.360345,103.47792 70.360345,74.578822 " />
+      <path
+         sodipodi:type="inkscape:box3dside"
+         id="path2567"
+         style="fill:#353564;fill-rule:evenodd;stroke:none;stroke-linejoin:round"
+         inkscape:box3dsidetype="6"
+         d="M 31.71418,57.476352 V 90.384574 L 70.360345,103.47792 V 74.578822 Z"
+         points="31.71418,90.384574 70.360345,103.47792 70.360345,74.578822 31.71418,57.476352 " />
+      <path
+         sodipodi:type="inkscape:box3dside"
+         id="path2569"
+         style="fill:#4d4d9f;fill-rule:evenodd;stroke:none;stroke-linejoin:round"
+         inkscape:box3dsidetype="5"
+         d="M 31.71418,57.476352 61.411643,23.251546 103.7229,48.946398 70.360345,74.578822 Z"
+         points="61.411643,23.251546 103.7229,48.946398 70.360345,74.578822 31.71418,57.476352 " />
+      <path
+         sodipodi:type="inkscape:box3dside"
+         id="path2575"
+         style="fill:#419d73"
+         inkscape:box3dsidetype="13"
+         d="M 31.71418,90.384574 61.411643,64.182667 103.7229,83.854192 70.360345,103.47792 Z"
+         points="61.411643,64.182667 103.7229,83.854192 70.360345,103.47792 31.71418,90.384574 " />
+      <path
+         sodipodi:type="inkscape:box3dside"
+         id="path2573"
+         style="fill:#d7ffe2"
+         inkscape:box3dsidetype="14"
+         d="M 61.411643,23.251546 V 64.182667 L 103.7229,83.854192 V 48.946398 Z"
+         points="61.411643,64.182667 103.7229,83.854192 103.7229,48.946398 61.411643,23.251546 " />
+      <path
+         sodipodi:type="inkscape:box3dside"
+         id="path2571"
+         style="fill:#86bf8f"
+         inkscape:box3dsidetype="3"
+         d="M 31.71418,57.476352 61.411643,23.251546 V 64.182667 L 31.71418,90.384574 Z"
+         points="61.411643,23.251546 61.411643,64.182667 31.71418,90.384574 31.71418,57.476352 " />
+    </g>
+    <text
+       xml:space="preserve"
+       id="text360"
+       style="font-size:26.6667px;white-space:pre;shape-inside:url(#rect362);display:inline;fill:#000000;stroke:#000000;stroke-width:0.00377953"
+       transform="matrix(0.26458333,0,0,0.26458333,-18.765479,-60.596973)"
+       inkscape:export-filename="ActivateLinux.svg"
+       inkscape:export-xdpi="24.190475"
+       inkscape:export-ydpi="24.190475"
+       inkscape:label="text360"><tspan
+         x="227.81055"
+         y="428.75719"
+         id="tspan2894"><tspan
+           style="font-family:Webdings;-inkscape-font-specification:Webdings"
+           id="tspan2892">Activate </tspan></tspan><tspan
+         x="227.81055"
+         y="463.15829"
+         id="tspan2898"><tspan
+           style="font-family:Webdings;-inkscape-font-specification:Webdings"
+           id="tspan2896">Linux</tspan></tspan></text>
+  </g>
+</svg>
